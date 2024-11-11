@@ -1,3 +1,22 @@
-.div {
-    
+body{
+    background-image: url(https://assets.editorial.aetnd.com/uploads/2013/07/gettyimages-1390815938.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(6px);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
+
+.title{
+    font-size: 70px;
+    font-family: sans-serif;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+
