@@ -1,0 +1,101 @@
+html, body {
+    height: 100%; /* Full height for the viewport */
+    margin: 0; /* Remove default margin */
+    overflow: hidden; /* Disable scrolling */
+}
+
+.overlay-container {
+    background-image: url('https://assets.editorial.aetnd.com/uploads/2013/07/gettyimages-1390815938.jpg'); /* Replace with your image */
+    background-size: cover; /* Ensure the image covers the full screen */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Fullscreen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Allows layering of content */
+}
+
+.overlay-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit; /* Inherit the background image */
+    filter: blur(6px); /* Blur the background */
+    z-index: 1; /* Ensures the blur is beneath the text */
+}
+
+.overlay-text {
+    position: relative; /* Places the text above the blur */
+    z-index: 2; /* Ensures it appears above the blurred background */
+    text-align: center;
+    color: white; /* White text */
+    font-family: 'Roboto', sans-serif;
+    backdrop-filter: blur(6px); /* Optional: Adds additional blur directly to the text background */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background behind text for better readability */
+    border-radius: 10px; /* Rounded edges for the text container */
+}
+
+.overlay-text h1 {
+    font-size: 4rem; /* Large heading size */
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Subtle shadow for readability */
+}
+
+.overlay-text p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7); /* Subtle shadow for readability */
+}
+
+.explore-btn {
+    display: inline-block;
+    background-color: #FFD700; /* Gold button */
+    color: black; /* Black text for contrast */
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.explore-btn:hover {
+    background-color: white; /* Hover effect */
+    color: black;
+    cursor: pointer;
+}
+
+.main-menu {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    display: flex; /* Align menu items horizontally */
+    justify-content: center; /* Center the menu items */
+    align-items: center; /* Vertically align items */
+    padding: 15px 0; /* Add padding to make it taller */
+    position: fixed; /* Keeps menu fixed at the top */
+    top: 0;
+    width: 100%; /* Full-width menu */
+    z-index: 10; /* Ensures menu is above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.menu-item {
+    margin: 0 20px; /* Adds spacing between menu items */
+}
+
+.menu-item a {
+    color: white; /* White text color */
+    text-decoration: none; /* Removes underline */
+    font-family: 'Roboto', sans-serif; /* Consistent font styling */
+    font-size: 18px; /* Adjust font size */
+    transition: color 0.3s; /* Smooth hover effect */
+}
+
+.menu-item a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
