@@ -4,56 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="Food page.css">
+    <link rel="stylesheet" href="Food Page.css">
     <title>Food in Tokyo</title>
 </head>
 <body>
-  <div class="food-page">
-      <div class="hero">
-          <h1>Savor the Flavors of Tokyo</h1>
-      </div>
+    <div class="food-page">
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>Savor the Flavors of Tokyo</h1>
+        </div>
 
-      <div class="masonry-grid">
-          <div class="food-item">
-              <div class="image-wrapper">
-                  <img src="bilder/Ramen.jpg" alt="Ramen">
-              </div>
-              <h2>Ramen</h2>
-              <p>Indulge in Tokyo’s rich and savory bowls of ramen, crafted with care.</p>
-          </div>
-          <div class="food-item">
-              <div class="image-wrapper">
-                  <img src="bilder/Sushi.jpg" alt="Sushi">
-              </div>
-              <h2>Sushi</h2>
-              <p>Experience world-class sushi from Tokyo’s renowned restaurants.</p>
-          </div>
-          <div class="food-item">
-              <div class="image-wrapper">
-                  <img src="bilder/Tempura_01.jpg" alt="Tempura">
-              </div>
-              <h2>Tempura</h2>
-              <p>Lightly battered and fried to golden perfection, a must-try delicacy.</p>
-          </div>
-          <div class="food-item">
-              <div class="image-wrapper">
-                  <img src="bilder/lokal-izakaya-4f9cb306.jpg" alt="Izakaya">
-              </div>
-              <h2>Izakaya</h2>
-              <p>Cozy Japanese pubs serving small plates and local drinks.</p>
-          </div>
-          <div class="food-item">
-              <div class="image-wrapper">
-                  <img src="bilder/ND-Takoyaki-wfhg-superJumbo.jpg" alt="Takoyaki">
-              </div>
-              <h2>Takoyaki</h2>
-              <p>Delicious octopus-filled street food balls, perfect for snacking.</p>
-          </div>
-      </div>
+        <!-- Navigation Links -->
+        <div class="page-navigation">
+            <a href="#types-of-food">Types of Food</a>
+            <a href="#types-of-restaurants">Types of Restaurants</a>
+        </div>
 
-      <div class="navigation">
-          <a href="Main page.html">Back to Main Menu</a>
-      </div>
-  </div>
+        <!-- Types of Food Section -->
+        <section id="types-of-food">
+            <h2 class="fade-in">Types of Food</h2>
+            <p class="section-intro">Explore Tokyo's vibrant culinary scene, featuring a variety of traditional and modern dishes loved by locals and visitors alike.</p>
+
+            <div class="food-grid">
+                <!-- Ramen -->
+                <div class="food-item">
+                    <div class="image-wrapper">
+                        <img src="bilder/Ramen.jpg" alt="Ramen">
+                    </div>
+                    <h3>Ramen</h3>
+                    <p>Indulge in Tokyo’s rich and savory bowls of ramen, crafted with care.</p>
+                </div>
+
+                <!-- Sushi -->
+                <div class="food-item">
+                    <div class="image-wrapper">
+                        <img src="bilder/Sushi.jpg" alt="Sushi">
+                    </div>
+                    <h3>Sushi</h3>
+                    <p>Experience world-class sushi from Tokyo’s renowned restaurants.</p>
+                </div>
+
+                <!-- Tempura -->
+                <div class="food-item">
+                    <div class="image-wrapper">
+                        <img src="bilder/Tempura_01.jpg" alt="Tempura">
+                    </div>
+                    <h3>Tempura</h3>
+                    <p>Lightly battered and fried to golden perfection, a must-try delicacy.</p>
+                </div>
+
+                <!-- Takoyaki -->
+                <div class="food-item">
+                    <div class="image-wrapper">
+                        <img src="bilder/ND-Takoyaki-wfhg-superJumbo.jpg" alt="Takoyaki">
+                    </div>
+                    <h3>Takoyaki</h3>
+                    <p>Delicious octopus-filled street food balls, perfect for snacking.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Types of Restaurants Section -->
+        <section id="types-of-restaurants">
+            <h2 class="fade-in">Types of Restaurants</h2>
+            <p class="section-intro">Discover the best places to experience Tokyo's diverse food culture, from bustling izakayas to intimate sushi bars.</p>
+
+            <div class="food-grid">
+                <!-- Izakaya -->
+                <div class="food-item">
+                    <div class="image-wrapper">
+                        <img src="bilder/lokal-izakaya-4f9cb306.jpg" alt="Izakaya">
+                    </div>
+                    <h3>Izakaya</h3>
+                    <p>Cozy Japanese pubs serving small plates and local drinks.</p>
+                </div>
+
+                <!-- Kaiseki -->
+                <div class="food-item">
+                    <div class="image-wrapper">
+                        <img src="bilder/Kaiseki-Restaurant.jpg" alt="Kaiseki">
+                    </div>
+                    <h3>Kaiseki</h3>
+                    <p>Traditional multi-course dining that showcases the art of Japanese cooking.</p>
+                </div>
+
+                <!-- Street Food -->
+                <div class="food-item">
+                    <div class="image-wrapper">
+                        <img src="bilder/Tokyo-Street-Food.jpg" alt="Street Food">
+                    </div>
+                    <h3>Street Food</h3>
+                    <p>Vibrant stalls offering delicious treats such as yakitori, taiyaki, and more.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Back to Main Menu -->
+        <div class="navigation">
+            <a href="MainPage.html">Back to Main Menu</a>
+        </div>
+
+        <!-- Scroll to Top Button -->
+        <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
+    </div>
+
+    <script>
+        // Scroll-to-Top Functionality
+        window.addEventListener('scroll', () => {
+            const button = document.querySelector('.scroll-to-top');
+            button.style.display = window.scrollY > 300 ? 'block' : 'none';
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
