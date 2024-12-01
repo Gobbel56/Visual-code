@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Mat-Style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="intro-section">
+        <h1 class="main-title">Tokyo's Culinary Adventure</h1>
+        <p class="intro-description">
+            Tokyo: A Culinary Wonderland
+            Tokyo stands as a global epicenter of culinary excellence, blending tradition with innovation to create an unparalleled dining experience. From Michelin-starred restaurants to hidden izakayas, bustling fish markets, and humble ramen shops, the city offers a spectrum of flavors that captivate and inspire.
+        </p>
+        <p class="intro-highlight">
+            The essence of Tokyo's food culture—its dedication to quality, seasonal ingredients, and the artistry of preparation. Discover the centuries-old techniques behind sushi and kaiseki cuisine, explore the charm of local street food, and delve into the vibrant world of contemporary culinary innovation that defines Tokyo's modern dining scene.
+            With every meal, Tokyo tells a story—a tale of heritage, creativity, and an unyielding passion for food. Let this be your gateway to the rich and flavorful world of Tokyo’s gastronomy.
+        </p>
+        <div class="intro-image-container">
+            <img src="bilder/Tokyo Food Guide.jpeg" alt="Collage of Tokyo food and dining experiences" class="intro-image">
+            <p class="image-caption">A glimpse into Tokyo's food culture: Sushi, street food, and more!</p>
+        </div>
+    </section>
+
+    <section class="must-try-foods">
+        <h2 class="section-title">Must-Try Foods in Tokyo</h2>
+        <p class="section-description">
+            Tokyo's cuisine is a vibrant mix of tradition and innovation. These iconic dishes are a must-try for anyone visiting the city!
+        </p>
+        <div class="food-grid">
+            <!-- Sushi -->
+            <div class="food-item">
+                <img src="bilder/Sushi.jpg" alt="Sushi" class="food-image">
+                <h3 class="food-title">Sushi</h3>
+                <p class="food-description">
+                    The pinnacle of Japanese cuisine, sushi in Tokyo is crafted with the freshest seafood and impeccable precision.
+                </p>
+            </div>
+            <!-- Ramen -->
+            <div class="food-item">
+                <img src="bilder/Ramen.jpg" alt="Ramen" class="food-image">
+                <h3 class="food-title">Ramen</h3>
+                <p class="food-description">
+                    From rich tonkotsu to light shoyu, Tokyo's ramen shops offer a bowl for every palate.
+                </p>
+            </div>
+            <!-- Tempura -->
+            <div class="food-item">
+                <img src="bilder/Tempura_01.jpg" alt="Tempura" class="food-image">
+                <h3 class="food-title">Tempura</h3>
+                <p class="food-description">
+                    Light and crispy, tempura is a deep-fried delicacy served with dipping sauce and grated radish.
+                </p>
+            </div>
+            <!-- Takoyaki -->
+            <div class="food-item">
+                <img src="bilder/ND-Takoyaki-wfhg-superJumbo.jpg" alt="Takoyaki" class="food-image">
+                <h3 class="food-title">Takoyaki</h3>
+                <p class="food-description">
+                    These savory octopus balls, topped with sauce and bonito flakes, are a street food favorite.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="food-districts">
+        <h2 class="section-title">Popular Food Districts in Tokyo</h2>
+        <p class="section-intro">Explore Tokyo's renowned culinary districts, each offering a unique flavor of the city's rich food culture.</p>
+        <div class="districts-container">
+            <!-- Tsukiji Market -->
+            <div class="district-card">
+                <img src="bilder/2018_Tsukiji_fish_market.jpg" alt="Tsukiji Market" class="district-image">
+                <h3 class="district-title">Tsukiji Market</h3>
+                <p class="district-description">Tsukiji Market has long been a symbol of Tokyo’s culinary heritage, renowned worldwide as a hub of fresh seafood and vibrant activity. Although the inner wholesale market relocated to Toyosu in 2018, the outer market remains a bustling destination, offering visitors a taste of its rich history and unmatched variety of food.
+
+                    Wander through narrow alleys lined with stalls brimming with fresh fish, succulent shellfish, and expertly prepared sushi. Beyond seafood, Tsukiji also showcases premium produce, aromatic teas, and an array of Japanese delicacies, from tamagoyaki to wagyu beef skewers.
+                    
+                    This market is more than a place to shop; it’s an experience that reflects the heartbeat of Tokyo’s food culture. A visit to Tsukiji promises not just a feast for the palate, but a deeper connection to the traditions and vibrancy of Japan’s culinary world.</p>
+            </div>
+            <!-- Shinjuku -->
+            <div class="district-card">
+                <img src="bilder/iStock-Shinjuku-Kabukicho-Godzilla.jpg" alt="Shinjuku" class="district-image">
+                <h3 class="district-title">Shinjuku</h3>
+                <p class="district-description">Hub of izakayas, ramen shops, and nightlife.</p>
+            </div>
+            <!-- Asakusa -->
+            <div class="district-card">
+                <img src="bilder/pixta_90252242_m_0.jpg" alt="Asakusa" class="district-image">
+                <h3 class="district-title">Asakusa</h3>
+                <p class="district-description">Street food heaven near Senso-ji Temple.</p>
+            </div>
+        </div>
+    </section>    
+
+    <section class="map-section">
+        <h2 class="section-title">Food Hotspots in Tokyo</h2>
+        <div class="map-container">
+            <img src="bilder/Tokyo-Map.png" usemap="#foodmap" alt="Map of Tokyo" class="map-image">
+            
+            <div class="hotspot" style="top: 40%; left: 30%;" title="Tsukiji Market"></div>
+            <div class="hotspot" style="top: 50%; left: 50%;" title="Shinjuku"></div>
+            <div class="hotspot" style="top: 20%; left: 60%;" title="Asakusa"></div>
+        </div>
+
+        <map name="foodmap">
+            <!-- Hotspot for Tsukiji Market -->
+            <area shape="circle" coords="366,352,34" href="#details-tsukiji" alt="Tsukiji Market" title="Tsukiji Market">
+            
+            <!-- Hotspot for Shinjuku -->
+            <area shape="circle" coords="16,106,180" href="#details-shinjuku" alt="Shinjuku" title="Shinjuku">
+            
+            <!-- Hotspot for Asakusa -->
+            <area shape="circle" coords="502,0,64" href="#details-asakusa" alt="Asakusa" title="Asakusa">
+        </map>
+    
+        <div class="map-details">
+            <h3 class="detail-title" id="details-tsukiji">Tsukiji Market</h3>
+            <p class="detail-description">Famous seafood market and sushi heaven.</p>
+    
+            <h3 class="detail-title" id="details-shinjuku">Shinjuku</h3>
+            <p class="detail-description">Hub of izakayas, ramen shops, and nightlife.</p>
+    
+            <h3 class="detail-title" id="details-asakusa">Asakusa</h3>
+            <p class="detail-description">Street food heaven near Senso-ji Temple.</p>
+        </div>
+    </section>
+</body>
+</html>
