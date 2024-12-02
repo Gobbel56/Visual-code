@@ -118,9 +118,9 @@
 }
 
 .food-item:hover .food-title {
-    color: #ff6f61; /* Add a pop of color on hover */
+    color: #ff6f61;
 }
-
+/*Food distric Styling*/
 .food-districts {
     padding: 40px 20px;
     background-color: #f7f9fb;
@@ -149,12 +149,15 @@
 }
 
 .district-card {
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
     width: 300px;
+    height: 450px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
 .district-card:hover {
@@ -164,21 +167,27 @@
 
 .district-image {
     width: 100%;
-    height: 200px;
+    height: 150px;
     object-fit: cover;
 }
 
 .district-title {
-    font-size: 1.5em;
-    color: #444;
-    margin: 15px 0 5px;
+    font-size: 1.5rem;
+    padding: 10px;
+    color: #333;
+    background: #f8f8f8;
+    text-align: center;
 }
 
 .district-description {
-    font-size: 1em;
-    color: #666;
-    padding: 0 15px 15px;
+    font-size: 1rem;
+    color: #555;
+    padding: 15px;
+    height: 250px; /* Adjust height as needed */
+    overflow-y: auto;
+    overflow-x: hidden;
     line-height: 1.6;
+    scrollbar-width: thin;
 }
 
 @media screen and (max-width: 768px) {
@@ -218,11 +227,6 @@
     display: block;
     border: 2px solid #ddd;
     border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-.map-image:hover {
-    transform: scale(1.02);
 }
 
 /* Map Details Section */
@@ -249,31 +253,27 @@
 /* Container for the map */
 .map-container {
     position: relative;
-    display: inline-block;
+    width: 100%;
+    max-width: 800px; /* Ensure it matches the image's dimensions */
+    margin: 0 auto;
+    display: block;
+    overflow: hidden; /* Ensures hotspots do not extend beyond the container */
 }
 
 /* Image inside the container */
 .map-image {
     display: block;
     width: 100%;
-    max-width: 800px;
 }
 
 /* Hotspot Styles */
 .hotspot {
     position: absolute;
-    width: 15px;
-    height: 15px;
-    background-color: rgba(255, 0, 0, 0.6);
+    background-color: rgba(255, 0, 0, 0.5); /* Semi-transparent red */
     border: 2px solid #ff0000;
     border-radius: 50%;
-    cursor: pointer;
-    transform: translate(-50%, -50%);
-    transition: transform 0.3s ease;
-}
-
-.hotspot:hover {
-    transform: translate(-50%, -50%) scale(1.3);
+    pointer-events: none; /* Prevent interference with <area> clicks */
+    transform: translate(-50%, -50%); /* Center the circle */
 }
 
 @media screen and (max-width: 768px) {
@@ -300,4 +300,33 @@
     .detail-description {
         font-size: 0.9em;
     }
+}
+
+.main-menu {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    position: static;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.menu-item {
+    margin: 0 20px;
+}
+
+.menu-item a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.menu-item a:hover {
+    color: #FFD700;
 }
