@@ -1,0 +1,106 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-menu {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    width: 100%; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.menu-item {
+    margin: 0 20px;
+}
+
+.menu-item a {
+    color: white;
+    text-decoration: none; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+.menu-item a:hover {
+    color: #FFD700;
+}
+
+.feedback-page {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-header h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feedback-header p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Feedback Form */
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007BFF; /* Highlighted border */
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3); /* Subtle glow */
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #007BFF; /* Blue color */
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3; /* Darker blue */
+    transform: translateY(-2px); /* Subtle lift */
+}

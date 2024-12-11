@@ -1,3 +1,9 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Navigation Menu */
 .main-menu {
     background-color: rgba(0, 0, 0, 0.7);
@@ -31,6 +37,9 @@
     background-size: cover;
     background-position: center;
     color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 80px 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -49,8 +58,7 @@
     z-index: 1;
 }
 
-.intro h1,
-.intro p {
+.intro h1, .intro p {
     position: relative;
     z-index: 2;
 }
@@ -66,4 +74,196 @@
     font-size: 1.5rem;
     margin-bottom: 30px;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Culture Overview Section */
+.culture-introduction {
+    padding: 40px 20px;
+    margin: 30px auto;
+    max-width: 900px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+.culture-introduction h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.culture-introduction p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.introduction-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.culture-highlights {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.culture-highlights li {
+    margin: 10px 0;
+}
+
+.culture-highlights li::before {
+    content: '•';
+    color: #FFD700;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Traditions Section */
+.traditions-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9; /* Soft gray background for contrast */
+    text-align: center;
+}
+
+.traditions-header h2 {
+    font-size: 2.5rem;
+    color: #333; /* Dark gray for readability */
+    margin-bottom: 10px;
+}
+
+.traditions-header p {
+    font-size: 1.2rem;
+    color: #666; /* Medium gray for supporting text */
+    margin-bottom: 40px;
+}
+
+/* Content Grid */
+.traditions-content {
+    display: flex;
+    flex-wrap: wrap; /* Wrap content on smaller screens */
+    justify-content: space-between;
+    gap: 20px; /* Space between items */
+    max-width: 1200px;
+    margin: 0 auto; /* Center content */
+}
+
+/* Tradition Item */
+.tradition-item {
+    background-color: #fff; /* White background for each card */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden;
+    text-align: left; /* Align text to the left for a clean layout */
+    width: calc(33.333% - 20px); /* 3 items per row, with spacing */
+    min-width: 280px; /* Ensures responsiveness for smaller screens */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tradition-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Tradition Image */
+.tradition-image {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    object-position: center;
+    display: block;
+}
+
+/* Tradition Item Text */
+.tradition-item h3 {
+    font-size: 1.5rem;
+    color: #444; /* Darker gray for heading */
+    margin: 15px;
+}
+
+.tradition-item p {
+    font-size: 1rem;
+    color: #555; /* Medium gray for readability */
+    line-height: 1.6;
+    margin: 0 15px 20px 15px;
+}
+
+/* Festivals Section */
+.festivals-section {
+    padding: 60px 20px;
+    background-color: #fff; /* White background for contrast */
+    text-align: center;
+}
+
+.festivals-header h2 {
+    font-size: 2.5rem;
+    color: #222; /* Dark gray for emphasis */
+    margin-bottom: 10px;
+}
+
+.festivals-header p {
+    font-size: 1.2rem;
+    color: #555; /* Medium gray for supporting text */
+    margin-bottom: 40px;
+}
+
+/* Content Grid */
+.festivals-content {
+    display: flex;
+    flex-wrap: wrap; /* Wrap content on smaller screens */
+    justify-content: space-between;
+    gap: 20px; /* Space between items */
+    max-width: 1200px;
+    margin: 0 auto; /* Center content */
+}
+
+/* Festival Item */
+.festival-item {
+    background-color: #f9f9f9; /* Light gray background for the cards */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden;
+    text-align: left;
+    width: calc(33.333% - 20px); /* 3 items per row */
+    min-width: 280px; /* Ensures responsiveness for smaller screens */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.festival-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Festival Image */
+.festival-image {
+    width: 100%;
+    height: 200px; /* Uniform height for all images */
+    object-fit: cover; /* Crop and maintain aspect ratio */
+    object-position: center; /* Focus on center of the image */
+}
+
+/* Festival Item Text */
+.festival-item h3 {
+    font-size: 1.5rem;
+    color: #333; /* Dark gray for the title */
+    margin: 15px;
+}
+
+.festival-item p {
+    font-size: 1rem;
+    color: #666; /* Medium gray for text */
+    line-height: 1.6;
+    margin: 0 15px 20px 15px;
 }

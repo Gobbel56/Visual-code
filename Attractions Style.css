@@ -8,6 +8,7 @@
 .hero {
     background: url('https://www.webuildvalue.com/wp-content/uploads/2021/01/Tokyo-Tower.jpg') no-repeat center center/cover;
     color: #fff;
+    margin-bottom: 20px;
     padding: 80px 20px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     animation: fadeIn 2s ease-in-out;
@@ -41,6 +42,7 @@
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 @media (min-width: 768px) {
     .attraction-item {
         width: 300px;
